@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="0"/>
+  </AuxValues>
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+      <Group type="102" attributes="0">
+        <EmptySpace pref="16" max="-2" attributes="0"/>
+        <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="lMateria" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="materia" pref="210" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="lParcial" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="parcial" pref="210" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="configurarParciales" pref="154" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Component id="lGrupo" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="paralelo" pref="130" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="cupos" pref="154" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Component id="lTema" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="tema" pref="210" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="lTol" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="tolerancia" pref="210" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Component id="lInicio" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="inicio" pref="210" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="calInicio" pref="36" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="lFin" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="fin" pref="210" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="calFin" pref="36" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Component id="ayuda" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Component id="nuevo" pref="154" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="guardar" pref="154" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="cancelar" pref="154" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="actualizar" pref="154" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Component id="tablaScroll" pref="820" max="32767" attributes="0"/>
+          </Group>
+        </Group>
+        <EmptySpace pref="16" max="32767" attributes="0"/>
+      </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+      <Group type="102" attributes="0">
+        <EmptySpace pref="16" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="2" attributes="0">
+              <Component id="lMateria" pref="22" max="-2" attributes="0"/>
+              <Component id="materia" pref="34" max="-2" attributes="0"/>
+              <Component id="lParcial" pref="22" max="-2" attributes="0"/>
+              <Component id="parcial" pref="34" max="-2" attributes="0"/>
+              <Component id="configurarParciales" pref="34" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace pref="8" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="2" attributes="0">
+              <Component id="lGrupo" pref="22" max="-2" attributes="0"/>
+              <Component id="paralelo" pref="34" max="-2" attributes="0"/>
+              <Component id="cupos" pref="34" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace pref="8" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="2" attributes="0">
+              <Component id="lTema" pref="22" max="-2" attributes="0"/>
+              <Component id="tema" pref="34" max="-2" attributes="0"/>
+              <Component id="lTol" pref="22" max="-2" attributes="0"/>
+              <Component id="tolerancia" pref="34" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace pref="8" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="2" attributes="0">
+              <Component id="lInicio" pref="22" max="-2" attributes="0"/>
+              <Component id="inicio" pref="34" max="-2" attributes="0"/>
+              <Component id="calInicio" pref="34" max="-2" attributes="0"/>
+              <Component id="lFin" pref="22" max="-2" attributes="0"/>
+              <Component id="fin" pref="34" max="-2" attributes="0"/>
+              <Component id="calFin" pref="34" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace pref="8" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="2" attributes="0">
+              <Component id="ayuda" pref="22" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace pref="8" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="2" attributes="0">
+              <Component id="nuevo" pref="34" max="-2" attributes="0"/>
+              <Component id="guardar" pref="34" max="-2" attributes="0"/>
+              <Component id="cancelar" pref="34" max="-2" attributes="0"/>
+              <Component id="actualizar" pref="34" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace pref="8" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="2" attributes="0">
+              <Component id="tablaScroll" pref="300" max="32767" attributes="0"/>
+          </Group>
+        <EmptySpace pref="16" max="32767" attributes="0"/>
+      </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lMateria">
+      <Properties><Property name="text" type="java.lang.String" value="Materia"/></Properties></Component>
+    <Component class="javax.swing.JComboBox" name="materia">
+      <AuxValues><AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Ui.Opcion&gt;"/></AuxValues></Component>
+    <Component class="javax.swing.JLabel" name="lParcial">
+      <Properties><Property name="text" type="java.lang.String" value="Parcial"/></Properties></Component>
+    <Component class="javax.swing.JComboBox" name="parcial">
+      <AuxValues><AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Ui.Opcion&gt;"/></AuxValues></Component>
+    <Component class="javax.swing.JButton" name="configurarParciales">
+      <Properties><Property name="text" type="java.lang.String" value="Configurar parciales"/></Properties></Component>
+    <Component class="javax.swing.JLabel" name="lGrupo">
+      <Properties><Property name="text" type="java.lang.String" value="Paralelo de la clase"/></Properties></Component>
+    <Component class="javax.swing.JComboBox" name="paralelo">
+      <AuxValues><AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Ui.Opcion&gt;"/></AuxValues></Component>
+    <Component class="javax.swing.JButton" name="cupos">
+      <Properties><Property name="text" type="java.lang.String" value="Configurar cupos"/></Properties></Component>
+    <Component class="javax.swing.JLabel" name="lTema">
+      <Properties><Property name="text" type="java.lang.String" value="Tema de clase"/></Properties></Component>
+    <Component class="javax.swing.JTextField" name="tema"></Component>
+    <Component class="javax.swing.JLabel" name="lTol">
+      <Properties><Property name="text" type="java.lang.String" value="Tolerancia de atraso (min)"/></Properties></Component>
+    <Component class="javax.swing.JTextField" name="tolerancia">
+      <Properties><Property name="text" type="java.lang.String" value="5"/></Properties></Component>
+    <Component class="javax.swing.JLabel" name="lInicio">
+      <Properties><Property name="text" type="java.lang.String" value="Inicio"/></Properties></Component>
+    <Component class="javax.swing.JTextField" name="inicio"></Component>
+    <Component class="javax.swing.JButton" name="calInicio">
+      <Properties><Property name="text" type="java.lang.String" value="▦"/></Properties></Component>
+    <Component class="javax.swing.JLabel" name="lFin">
+      <Properties><Property name="text" type="java.lang.String" value="Fin"/></Properties></Component>
+    <Component class="javax.swing.JTextField" name="fin"></Component>
+    <Component class="javax.swing.JButton" name="calFin">
+      <Properties><Property name="text" type="java.lang.String" value="▦"/></Properties></Component>
+    <Component class="javax.swing.JLabel" name="ayuda">
+      <Properties><Property name="text" type="java.lang.String" value="Lunes a viernes: horas en punto, de 07:00 a 13:00 o de 14:00 a 20:00."/></Properties></Component>
+    <Component class="javax.swing.JButton" name="nuevo">
+      <Properties><Property name="text" type="java.lang.String" value="Nueva clase"/></Properties></Component>
+    <Component class="javax.swing.JButton" name="guardar">
+      <Properties><Property name="text" type="java.lang.String" value="Guardar"/></Properties></Component>
+    <Component class="javax.swing.JButton" name="cancelar">
+      <Properties><Property name="text" type="java.lang.String" value="Cancelar clase"/></Properties></Component>
+    <Component class="javax.swing.JButton" name="actualizar">
+      <Properties><Property name="text" type="java.lang.String" value="Actualizar"/></Properties></Component>
+    <Container class="javax.swing.JScrollPane" name="tablaScroll">
+      <AuxValues><AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/></AuxValues>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents><Component class="javax.swing.JTable" name="tabla"></Component></SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
