@@ -11,10 +11,10 @@ public class ReportesPanel extends javax.swing.JPanel {
         initComponents();
         modeloDetalle = new Ui.Tabla(detalle, 2, "Cédula", "Estudiante", "Clase", "Inicio programado",
                 "Fin programado", "Estado de asistencia", "Marca de asistencia", "Motivo de justificación", "Paralelo");
-        modeloResumen = new Ui.Tabla(detalle, 0, "Cédula", "Estudiante", "A tiempo",
+        modeloResumen = new Ui.Tabla(resumen, 0, "Cédula", "Estudiante", "A tiempo",
                 "Atrasos", "Faltas sin justificar", "Faltas justificadas", "Pendientes", "Clases computadas", "Asistencia (%)");
         ajustarAnchos(detalle, 108, 160, 140, 132, 132, 150, 137, 160, 75);
-        ajustarAnchos(detalle, 108, 165, 66, 65, 132, 127, 82, 125, 103);
+        ajustarAnchos(resumen, 108, 165, 66, 65, 132, 127, 82, 125, 103);
         detalle.getSelectionModel().addListSelectionListener(e -> {
             if (!e.getValueIsAdjusting()) actualizarBotonesDetalle();
         });
@@ -74,198 +74,12 @@ public class ReportesPanel extends javax.swing.JPanel {
         justificar.setEnabled(puedeJustificar && Set.of("Falta sin justificar", "Falta justificada").contains(estado));
         justificar.setText(estado.equals("Falta justificada") ? "Editar justificación" : "Justificar falta");
     }
-//
-    @SuppressWarnings("unchecked")
-    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
-    private void initComponents() {
 
-        jPanel1 = new javax.swing.JPanel();
-        Materia = new javax.swing.JLabel();
-        materia = new javax.swing.JComboBox<>();
-        Parcial = new javax.swing.JLabel();
-        parcial = new javax.swing.JComboBox<>();
-        actualizar = new javax.swing.JButton();
-        totalLegalizadas = new javax.swing.JLabel();
-        tDetalle = new javax.swing.JLabel();
-        detalleScroll = new javax.swing.JScrollPane();
-        detalle = new javax.swing.JTable();
-        foto = new javax.swing.JButton();
-        justificar = new javax.swing.JButton();
-        csvDetalle = new javax.swing.JButton();
-        csvResumen = new javax.swing.JButton();
-        tResumen = new javax.swing.JLabel();
-        resumenScroll = new javax.swing.JScrollPane();
-        resumen = new javax.swing.JTable();
-        ayuda = new javax.swing.JLabel();
-        Pendientes = new javax.swing.JLabel();
-
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
-
-        Materia.setText("Materia");
-
-        materia.addActionListener(this::materiaActionPerformed);
-
-        Parcial.setText("Parcial");
-
-        actualizar.setText("Actualizar");
-        actualizar.addActionListener(this::actualizarActionPerformed);
-
-        totalLegalizadas.setText("Selecciona una materia para consultar el total de matriculas legalizadas");
-
-        tDetalle.setText("Detalle  de asistencia por clase y detalle");
-
-        detalle.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-
-            }
-        ));
-        detalle.setToolTipText("");
-        detalleScroll.setViewportView(detalle);
-
-        foto.setText("Ver foto de Asistencia");
-        foto.addActionListener(this::fotoActionPerformed);
-
-        justificar.setText("Justificar Falta");
-        justificar.addActionListener(this::justificarActionPerformed);
-
-        csvDetalle.setText("Exportar Detalle");
-        csvDetalle.addActionListener(this::csvDetalleActionPerformed);
-
-        csvResumen.setText("Exportar Resumen");
-        csvResumen.addActionListener(this::csvResumenActionPerformed);
-
-        tResumen.setText("Resumen por estudiante del Parcial Seleccionado");
-
-        resumen.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-
-            },
-            new String [] {
-
-            }
-        ));
-        resumenScroll.setViewportView(resumen);
-
-        ayuda.setText("% = (a tiempo + atrasos) ÷ clases computadas × 100. Las faltas justificadas cuentan como faltas.");
-
-        Pendientes.setText("Pendientes: clases programadas o en curso sin marca. No cuentan en el porcentaje.");
-
-        javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
-        jPanel1.setLayout(jPanel1Layout);
-        jPanel1Layout.setHorizontalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(detalleScroll, javax.swing.GroupLayout.Alignment.TRAILING)
-                    .addGroup(jPanel1Layout.createSequentialGroup()
-                        .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(18, 18, 18)
-                                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                                    .addComponent(tDetalle)
-                                    .addComponent(totalLegalizadas)))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(foto, javax.swing.GroupLayout.PREFERRED_SIZE, 157, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(justificar, javax.swing.GroupLayout.PREFERRED_SIZE, 156, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(csvDetalle, javax.swing.GroupLayout.PREFERRED_SIZE, 124, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(csvResumen, javax.swing.GroupLayout.PREFERRED_SIZE, 133, javax.swing.GroupLayout.PREFERRED_SIZE))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addGap(20, 20, 20)
-                                .addComponent(tResumen))
-                            .addGroup(jPanel1Layout.createSequentialGroup()
-                                .addContainerGap()
-                                .addComponent(Materia)
-                                .addGap(18, 18, 18)
-                                .addComponent(materia, javax.swing.GroupLayout.PREFERRED_SIZE, 210, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(Parcial, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                                .addComponent(parcial, javax.swing.GroupLayout.PREFERRED_SIZE, 174, javax.swing.GroupLayout.PREFERRED_SIZE)
-                                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                                .addComponent(actualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 153, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                        .addGap(0, 172, Short.MAX_VALUE)))
-                .addContainerGap())
-            .addComponent(resumenScroll)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addComponent(ayuda)
-                    .addComponent(Pendientes))
-                .addGap(0, 0, Short.MAX_VALUE))
-        );
-        jPanel1Layout.setVerticalGroup(
-            jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(jPanel1Layout.createSequentialGroup()
-                .addContainerGap()
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(Materia)
-                    .addComponent(materia, javax.swing.GroupLayout.PREFERRED_SIZE, 30, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(Parcial)
-                    .addComponent(parcial, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(actualizar, javax.swing.GroupLayout.PREFERRED_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(totalLegalizadas)
-                .addGap(18, 18, 18)
-                .addComponent(tDetalle)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(detalleScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 167, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addGroup(jPanel1Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
-                    .addComponent(foto, javax.swing.GroupLayout.PREFERRED_SIZE, 39, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(justificar, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(csvDetalle, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(csvResumen, javax.swing.GroupLayout.PREFERRED_SIZE, 41, javax.swing.GroupLayout.PREFERRED_SIZE))
-                .addGap(18, 18, 18)
-                .addComponent(tResumen)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(resumenScroll, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                .addComponent(ayuda, javax.swing.GroupLayout.PREFERRED_SIZE, 28, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
-                .addComponent(Pendientes, javax.swing.GroupLayout.PREFERRED_SIZE, 25, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(26, Short.MAX_VALUE))
-        );
-
-        materia.getAccessibleContext().setAccessibleParent(this);
-        parcial.getAccessibleContext().setAccessibleParent(this);
-        detalleScroll.getAccessibleContext().setAccessibleParent(detalleScroll);
-        resumenScroll.getAccessibleContext().setAccessibleParent(resumenScroll);
-
-        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
-        getContentPane().setLayout(layout);
-        layout.setHorizontalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                .addContainerGap())
-        );
-        layout.setVerticalGroup(
-            layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGroup(layout.createSequentialGroup()
-                .addContainerGap()
-                .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
-        );
-
-        pack();
-    }// </editor-fold>//GEN-END:initComponents
-
-    private void materiaActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_materiaActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_materiaActionPerformed
-
-    private void actualizarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_actualizarActionPerformed
-       Ui.seguro(this, recargar);
+    private void actualizarActionPerformed(ActionEvent evt) {//GEN-FIRST:event_actualizarActionPerformed
+        Ui.seguro(this, recargar);
     }//GEN-LAST:event_actualizarActionPerformed
 
-    private void fotoActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_fotoActionPerformed
+    private void fotoActionPerformed(ActionEvent evt) {//GEN-FIRST:event_fotoActionPerformed
         Ui.seguro(this, () -> {
             String[] fila = modeloDetalle.exigirSeleccion();
             String evidencia = Ui.consultar(this, cliente, "foto", Ui.id(parcial), fila[0], fila[1]).get(0)[0];
@@ -273,8 +87,8 @@ public class ReportesPanel extends javax.swing.JPanel {
         });
     }//GEN-LAST:event_fotoActionPerformed
 
-    private void justificarActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_justificarActionPerformed
-         Ui.seguro(this, () -> {
+    private void justificarActionPerformed(ActionEvent evt) {//GEN-FIRST:event_justificarActionPerformed
+        Ui.seguro(this, () -> {
             String[] fila = modeloDetalle.exigirSeleccion();
             String motivo = JOptionPane.showInputDialog(this, "Motivo de la justificación", fila[Academico.MOTIVO_DETALLE]);
             if (motivo != null) {
@@ -284,54 +98,173 @@ public class ReportesPanel extends javax.swing.JPanel {
         });
     }//GEN-LAST:event_justificarActionPerformed
 
-    private void csvDetalleActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_csvDetalleActionPerformed
+    private void csvDetalleActionPerformed(ActionEvent evt) {//GEN-FIRST:event_csvDetalleActionPerformed
         Ui.seguro(this, () -> modeloDetalle.exportar(this, "detalle-asistencia", contexto));
     }//GEN-LAST:event_csvDetalleActionPerformed
 
-    private void csvResumenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_csvResumenActionPerformed
+    private void csvResumenActionPerformed(ActionEvent evt) {//GEN-FIRST:event_csvResumenActionPerformed
         Ui.seguro(this, () -> modeloResumen.exportar(this, "resumen-parcial", contexto));
     }//GEN-LAST:event_csvResumenActionPerformed
 
-    public static void main(String args[]) {
-        /* Set the Nimbus look and feel */
-        //<editor-fold defaultstate="collapsed" desc=" Look and feel setting code (optional) ">
-        /* If Nimbus (introduced in Java SE 6) is not available, stay with the default look and feel.
-         * For details see http://download.oracle.com/javase/tutorial/uiswing/lookandfeel/plaf.html 
-         */
-        try {
-            for (javax.swing.UIManager.LookAndFeelInfo info : javax.swing.UIManager.getInstalledLookAndFeels()) {
-                if ("Nimbus".equals(info.getName())) {
-                    javax.swing.UIManager.setLookAndFeel(info.getClassName());
-                    break;
-                }
-            }
-        } catch (ReflectiveOperationException | javax.swing.UnsupportedLookAndFeelException ex) {
-            logger.log(java.util.logging.Level.SEVERE, null, ex);
-        }
-        //</editor-fold>
 
-        /* Create and display the form */
-        java.awt.EventQueue.invokeLater(() -> new ReportesPanel().setVisible(true));
-    }
+    @SuppressWarnings("unchecked")
+    // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
+    private void initComponents() {
+        lMateria = new javax.swing.JLabel();
+        materia = new javax.swing.JComboBox<>();
+        lParcial = new javax.swing.JLabel();
+        parcial = new javax.swing.JComboBox<>();
+        actualizar = new javax.swing.JButton();
+        totalLegalizadas = new javax.swing.JLabel();
+        tDetalle = new javax.swing.JLabel();
+        detalle = new javax.swing.JTable();
+        detalleScroll = new javax.swing.JScrollPane();
+        foto = new javax.swing.JButton();
+        justificar = new javax.swing.JButton();
+        csvDetalle = new javax.swing.JButton();
+        csvResumen = new javax.swing.JButton();
+        tResumen = new javax.swing.JLabel();
+        resumen = new javax.swing.JTable();
+        resumenScroll = new javax.swing.JScrollPane();
+        ayuda = new javax.swing.JLabel();
+        lPendientes = new javax.swing.JLabel();
+
+        lMateria.setText("Materia");
+        lParcial.setText("Parcial");
+        actualizar.setText("Actualizar");
+        actualizar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                actualizarActionPerformed(evt);
+            }
+        });
+        totalLegalizadas.setText("Selecciona una materia para consultar el total de matrículas legalizadas.");
+        tDetalle.setText("Detalle de asistencia por clase y estudiante");
+        detalleScroll.setViewportView(detalle);
+        foto.setText("Ver foto de asistencia");
+        foto.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                fotoActionPerformed(evt);
+            }
+        });
+        justificar.setText("Justificar falta");
+        justificar.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                justificarActionPerformed(evt);
+            }
+        });
+        csvDetalle.setText("Exportar detalle");
+        csvDetalle.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                csvDetalleActionPerformed(evt);
+            }
+        });
+        csvResumen.setText("Exportar resumen");
+        csvResumen.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                csvResumenActionPerformed(evt);
+            }
+        });
+        tResumen.setText("Resumen por estudiante del parcial seleccionado");
+        resumenScroll.setViewportView(resumen);
+        ayuda.setText("% = (a tiempo + atrasos) ÷ clases computadas × 100. Las faltas justificadas cuentan como faltas.");
+        lPendientes.setText("Pendientes: clases programadas o en curso sin marca. No cuentan en el porcentaje.");
+
+        javax.swing.GroupLayout layout = new javax.swing.GroupLayout(this);
+        this.setLayout(layout);
+        layout.setHorizontalGroup(
+            layout.createSequentialGroup().addGap(16)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lMateria, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8)
+                        .addComponent(materia, javax.swing.GroupLayout.DEFAULT_SIZE, 250, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8)
+                        .addComponent(lParcial, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8)
+                        .addComponent(parcial, javax.swing.GroupLayout.DEFAULT_SIZE, 220, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8)
+                        .addComponent(actualizar, javax.swing.GroupLayout.DEFAULT_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(totalLegalizadas, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(tDetalle, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(detalleScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 990, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(foto, javax.swing.GroupLayout.DEFAULT_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8)
+                        .addComponent(justificar, javax.swing.GroupLayout.DEFAULT_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8)
+                        .addComponent(csvDetalle, javax.swing.GroupLayout.DEFAULT_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE)
+                        .addGap(8)
+                        .addComponent(csvResumen, javax.swing.GroupLayout.DEFAULT_SIZE, 154, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(tResumen, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(resumenScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 990, Short.MAX_VALUE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(ayuda, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(layout.createSequentialGroup()
+                        .addComponent(lPendientes, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(16, 16, Short.MAX_VALUE)
+        );
+        layout.setVerticalGroup(
+            layout.createSequentialGroup().addGap(16)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lMateria, javax.swing.GroupLayout.DEFAULT_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(materia, javax.swing.GroupLayout.DEFAULT_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(lParcial, javax.swing.GroupLayout.DEFAULT_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(parcial, javax.swing.GroupLayout.DEFAULT_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(actualizar, javax.swing.GroupLayout.DEFAULT_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(totalLegalizadas, javax.swing.GroupLayout.DEFAULT_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(tDetalle, javax.swing.GroupLayout.DEFAULT_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(detalleScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 180, Short.MAX_VALUE))
+                .addGap(8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(foto, javax.swing.GroupLayout.DEFAULT_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(justificar, javax.swing.GroupLayout.DEFAULT_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(csvDetalle, javax.swing.GroupLayout.DEFAULT_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(csvResumen, javax.swing.GroupLayout.DEFAULT_SIZE, 34, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(tResumen, javax.swing.GroupLayout.DEFAULT_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(resumenScroll, javax.swing.GroupLayout.DEFAULT_SIZE, 140, Short.MAX_VALUE))
+                .addGap(8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(ayuda, javax.swing.GroupLayout.DEFAULT_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(8)
+                .addGroup(layout.createParallelGroup(javax.swing.GroupLayout.Alignment.CENTER)
+                    .addComponent(lPendientes, javax.swing.GroupLayout.DEFAULT_SIZE, 22, javax.swing.GroupLayout.PREFERRED_SIZE))
+                .addGap(16, 16, Short.MAX_VALUE)
+        );
+    }// </editor-fold>//GEN-END:initComponents
+
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JLabel Materia;
-    private javax.swing.JLabel Parcial;
-    private javax.swing.JLabel Pendientes;
-    private javax.swing.JButton actualizar;
-    private javax.swing.JLabel ayuda;
-    private javax.swing.JButton csvDetalle;
-    private javax.swing.JButton csvResumen;
-    private javax.swing.JTable detalle;
-    private javax.swing.JScrollPane detalleScroll;
-    private javax.swing.JButton foto;
-    private javax.swing.JPanel jPanel1;
-    private javax.swing.JButton justificar;
-    private javax.swing.JComboBox<Ui.Opcion> materia;
-    private javax.swing.JComboBox<Ui.Opcion> parcial;
-    private javax.swing.JTable resumen;
-    private javax.swing.JScrollPane resumenScroll;
-    private javax.swing.JLabel tDetalle;
-    private javax.swing.JLabel tResumen;
-    private javax.swing.JLabel totalLegalizadas;
+    javax.swing.JLabel lMateria;
+    javax.swing.JComboBox<Ui.Opcion> materia;
+    javax.swing.JLabel lParcial;
+    javax.swing.JComboBox<Ui.Opcion> parcial;
+    javax.swing.JButton actualizar;
+    javax.swing.JLabel totalLegalizadas;
+    javax.swing.JLabel tDetalle;
+    javax.swing.JTable detalle;
+    javax.swing.JScrollPane detalleScroll;
+    javax.swing.JButton foto;
+    javax.swing.JButton justificar;
+    javax.swing.JButton csvDetalle;
+    javax.swing.JButton csvResumen;
+    javax.swing.JLabel tResumen;
+    javax.swing.JTable resumen;
+    javax.swing.JScrollPane resumenScroll;
+    javax.swing.JLabel ayuda;
+    javax.swing.JLabel lPendientes;
     // End of variables declaration//GEN-END:variables
 }
