@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<Form version="1.3" maxVersion="1.9" type="org.netbeans.modules.form.forminfo.JPanelFormInfo">
+  <AuxValues>
+    <AuxValue name="FormSettings_autoResourcing" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_autoSetComponentName" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_generateFQN" type="java.lang.Boolean" value="true"/>
+    <AuxValue name="FormSettings_generateMnemonicsCode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_i18nAutoMode" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_layoutCodeTarget" type="java.lang.Integer" value="1"/>
+    <AuxValue name="FormSettings_listenerGenerationStyle" type="java.lang.Integer" value="0"/>
+    <AuxValue name="FormSettings_variablesLocal" type="java.lang.Boolean" value="false"/>
+    <AuxValue name="FormSettings_variablesModifier" type="java.lang.Integer" value="0"/>
+  </AuxValues>
+  <Layout>
+    <DimensionLayout dim="0">
+      <Group type="103" groupAlignment="0" attributes="0">
+      <Group type="102" attributes="0">
+        <EmptySpace pref="16" max="-2" attributes="0"/>
+        <Group type="103" groupAlignment="0" attributes="0">
+          <Group type="102" attributes="0">
+              <Component id="lMateria" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="materia" pref="280" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="lAlumno" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="alumno" pref="290" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Component id="habilitar" pref="154" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="verFoto" pref="154" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="legalizar" pref="154" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="gestionar" pref="154" max="-2" attributes="0"/>
+              <EmptySpace pref="8" max="-2" attributes="0"/>
+              <Component id="actualizar" pref="154" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Component id="ayuda" max="-2" attributes="0"/>
+          </Group>
+          <Group type="102" attributes="0">
+              <Component id="tablaScroll" pref="820" max="32767" attributes="0"/>
+          </Group>
+        </Group>
+        <EmptySpace pref="16" max="32767" attributes="0"/>
+      </Group>
+      </Group>
+    </DimensionLayout>
+    <DimensionLayout dim="1">
+      <Group type="103" groupAlignment="0" attributes="0">
+      <Group type="102" attributes="0">
+        <EmptySpace pref="16" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="2" attributes="0">
+              <Component id="lMateria" pref="22" max="-2" attributes="0"/>
+              <Component id="materia" pref="34" max="-2" attributes="0"/>
+              <Component id="lAlumno" pref="22" max="-2" attributes="0"/>
+              <Component id="alumno" pref="34" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace pref="8" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="2" attributes="0">
+              <Component id="habilitar" pref="34" max="-2" attributes="0"/>
+              <Component id="verFoto" pref="34" max="-2" attributes="0"/>
+              <Component id="legalizar" pref="34" max="-2" attributes="0"/>
+              <Component id="gestionar" pref="34" max="-2" attributes="0"/>
+              <Component id="actualizar" pref="34" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace pref="8" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="2" attributes="0">
+              <Component id="ayuda" pref="22" max="-2" attributes="0"/>
+          </Group>
+          <EmptySpace pref="8" max="-2" attributes="0"/>
+          <Group type="103" groupAlignment="2" attributes="0">
+              <Component id="tablaScroll" pref="300" max="32767" attributes="0"/>
+          </Group>
+        <EmptySpace pref="16" max="32767" attributes="0"/>
+      </Group>
+      </Group>
+    </DimensionLayout>
+  </Layout>
+  <SubComponents>
+    <Component class="javax.swing.JLabel" name="lMateria">
+      <Properties><Property name="text" type="java.lang.String" value="Materia"/></Properties></Component>
+    <Component class="javax.swing.JComboBox" name="materia">
+      <AuxValues><AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Ui.Opcion&gt;"/></AuxValues></Component>
+    <Component class="javax.swing.JLabel" name="lAlumno">
+      <Properties><Property name="text" type="java.lang.String" value="Estudiante"/></Properties></Component>
+    <Component class="javax.swing.JComboBox" name="alumno">
+      <AuxValues><AuxValue name="JavaCodeGenerator_TypeParameters" type="java.lang.String" value="&lt;Ui.Opcion&gt;"/></AuxValues></Component>
+    <Component class="javax.swing.JButton" name="habilitar">
+      <Properties><Property name="text" type="java.lang.String" value="Habilitar materia"/></Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="habilitarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="verFoto">
+      <Properties><Property name="text" type="java.lang.String" value="Ver foto"/></Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="verFotoActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="legalizar">
+      <Properties><Property name="text" type="java.lang.String" value="Legalizar"/></Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="legalizarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="gestionar">
+      <Properties><Property name="text" type="java.lang.String" value="Cambiar estado"/></Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="gestionarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JButton" name="actualizar">
+      <Properties><Property name="text" type="java.lang.String" value="Actualizar"/></Properties>
+      <Events>
+        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="actualizarActionPerformed"/>
+      </Events>
+    </Component>
+    <Component class="javax.swing.JLabel" name="ayuda">
+      <Properties><Property name="text" type="java.lang.String" value="Revisa la foto de la solicitud y pulsa Legalizar después de que el estudiante finalice la matrícula."/></Properties></Component>
+    <Container class="javax.swing.JScrollPane" name="tablaScroll">
+      <AuxValues><AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/></AuxValues>
+      <Layout class="org.netbeans.modules.form.compat2.layouts.support.JScrollPaneSupportLayout"/>
+      <SubComponents><Component class="javax.swing.JTable" name="tabla"></Component></SubComponents>
+    </Container>
+  </SubComponents>
+</Form>
