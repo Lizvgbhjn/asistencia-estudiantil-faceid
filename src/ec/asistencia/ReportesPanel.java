@@ -74,7 +74,7 @@ public class ReportesPanel extends javax.swing.JPanel {
         justificar.setEnabled(puedeJustificar && Set.of("Falta sin justificar", "Falta justificada").contains(estado));
         justificar.setText(estado.equals("Falta justificada") ? "Editar justificación" : "Justificar falta");
     }
-
+//
     @SuppressWarnings("unchecked")
     // <editor-fold defaultstate="collapsed" desc="Generated Code">//GEN-BEGIN:initComponents
     private void initComponents() {
