@@ -1,0 +1,3 @@
+USE asistencia;
+
+ALTER TABLE materia ADD COLUMN IF NOT EXISTS nivel TINYINT UNSIGNED;
