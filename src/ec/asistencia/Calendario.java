@@ -36,6 +36,7 @@ final class Calendario extends JPanel {
     private final JLabel mes = new JLabel("", SwingConstants.CENTER);
     private final JLabel seleccion = new JLabel();
     private final JSpinner hora;
+    private final JSpinner minuto;
     private LocalDate fecha;
     private YearMonth mesVisible;
 
@@ -57,14 +58,18 @@ final class Calendario extends JPanel {
         add(dias, BorderLayout.CENTER);
 
         hora = new JSpinner(new SpinnerNumberModel(inicial.getHour(), 0, 23, 1));
+        minuto = new JSpinner(new SpinnerNumberModel(inicial.getMinute(), 0, 59, 1));
         JPanel pie = new JPanel(new FlowLayout(FlowLayout.LEADING, 8, 0));
         pie.add(seleccion);
         if (conHora) {
             hora.setEditor(new JSpinner.NumberEditor(hora, "00"));
+            minuto.setEditor(new JSpinner.NumberEditor(minuto, "00"));
             hora.getAccessibleContext().setAccessibleName("Hora");
+            minuto.getAccessibleContext().setAccessibleName("Minutos");
             pie.add(new JLabel("Hora:"));
             pie.add(hora);
-            pie.add(new JLabel(":00"));
+            pie.add(new JLabel(":"));
+            pie.add(minuto);
         }
         add(pie, BorderLayout.SOUTH);
         mostrarMes();
@@ -135,6 +140,7 @@ final class Calendario extends JPanel {
     private String valor(boolean conHora) throws ParseException {
         if (!conHora) return fecha.toString();
         hora.commitEdit();
-        return fecha.atTime((int) hora.getValue(), 0).format(Academico.HORARIO);
+        minuto.commitEdit();
+        return fecha.atTime((int) hora.getValue(), (int) minuto.getValue()).format(Academico.HORARIO);
     }
 }

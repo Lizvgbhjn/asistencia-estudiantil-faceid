@@ -165,7 +165,7 @@
     <Component class="javax.swing.JButton" name="calFin">
       <Properties><Property name="text" type="java.lang.String" value="▦"/></Properties></Component>
     <Component class="javax.swing.JLabel" name="ayuda">
-      <Properties><Property name="text" type="java.lang.String" value="Lunes a viernes: horas en punto, de 07:00 a 13:00 o de 14:00 a 20:00."/></Properties></Component>
+      <Properties><Property name="text" type="java.lang.String" value="Lunes a viernes: de 07:00 a 13:00 o de 14:00 a 20:00; se permiten minutos."/></Properties></Component>
     <Component class="javax.swing.JButton" name="nuevo">
       <Properties><Property name="text" type="java.lang.String" value="Nueva clase"/></Properties></Component>
     <Component class="javax.swing.JButton" name="guardar">

@@ -215,7 +215,6 @@ final class Academico {
         String grupo = d.length == 7 ? Reservas.paralelo(d[6]) : anterior == null ? "A" : anterior[0];
         exigir(anterior == null || anterior[0].equals(grupo), "El paralelo de una clase creada no se puede cambiar.");
         exigir(inicio.getDayOfWeek().getValue() <= 5, "Programa las clases de lunes a viernes.");
-        exigir(inicio.getMinute() == 0 && fin.getMinute() == 0, "Usa horas en punto para iniciar y terminar la clase.");
         var jornada = Jornada.de(Jornada.minutos(inicio.toLocalTime()), Jornada.minutos(fin.toLocalTime()));
         exigir(inicio.toLocalDate().equals(fin.toLocalDate()) && jornada != null,
                 "Programa la clase completa entre 07:00 y 13:00 o entre 14:00 y 20:00.");

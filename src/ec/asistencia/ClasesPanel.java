@@ -46,7 +46,7 @@ public class ClasesPanel extends javax.swing.JPanel {
         calInicio.setText("▦");
         lFin.setText("Fin");
         calFin.setText("▦");
-        ayuda.setText("Lunes a viernes: horas en punto, de 07:00 a 13:00 o de 14:00 a 20:00.");
+        ayuda.setText("Lunes a viernes: de 07:00 a 13:00 o de 14:00 a 20:00; se permiten minutos.");
         nuevo.setText("Nueva clase");
         guardar.setText("Guardar");
         cancelar.setText("Cancelar clase");
